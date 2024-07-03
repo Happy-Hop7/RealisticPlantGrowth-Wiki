@@ -4,6 +4,16 @@ description: Enhance your Minecraft server with more Realistic Plant Growth!
 
 # 👋 Welcome to Realistic Plant Growth
 
+<div data-full-width="false">
+
+<figure><img src=".gitbook/assets/Plugin Logo 2k.png" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+[![](https://img.shields.io/github/checks-status/Happy-Hop7/RealisticPlantGrowth/master?style=for-the-badge)](https://github.com/Happy-Hop7/RealisticPlantGrowth)   [![](https://img.shields.io/modrinth/dt/TcGxLk2t?style=for-the-badge\&logo=modrinth\&logoSize=auto)](https://modrinth.com/plugin/realistic-plant-growth)   [![](https://img.shields.io/modrinth/v/TcGxLk2t?style=for-the-badge)](https://modrinth.com/plugin/realistic-plant-growth/version/latest)   [![](https://img.shields.io/discord/1241334817098956851?style=for-the-badge\&logo=discord)](https://discord.gg/PgUhUNGu2A) &#x20;
+
+***
+
 {% hint style="warning" %}
 _**Realistic Plant Growth**_ is still in an early phase of development.\
 If you encounter any problems, please open an issue with a detailed error description.\
