@@ -21,7 +21,7 @@ The language files are located in your server's "plugins" directory:\
 `plugins/RealisticPlantGrowth/local`
 
 Upon the first plugin start, all supported languages for your version should be available in this directory.\
-If you wish to change the language, you'll need to identify and select the `.yml` file with the desired language. You also have the option to create your own language files and use them .
+If you wish to change the language, you'll need to identify and select the `.yml` file with the desired language. You also have the option to create your own language files and use them.
 
 In cases where specific translations are missing, the default strings from the default language\
 (`en-US`) will be automatically selected.
@@ -227,7 +227,7 @@ If the Growth process of the plant consists of multiple growth stages, the death
 ## UV-Light
 
 Artificial light source that allows plants within its radius to grow where the sky light level is lower than the `min_natural_light` value.\
-This allows the cultivation of plants underground or in buildings without direct sky light access.\\
+This allows the cultivation of plants underground or in buildings without direct sky light access.
 
 {% hint style="info" %}
 **Note:** Plants still require the minimal vanilla light level to grow.
@@ -320,25 +320,19 @@ Particle Effects: [https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Effect.ht
 
 Provides various debug logs to offer additional plugin data for troubleshooting and configuration.
 
+{% hint style="warning" %}
+WARNING: \
+Enable logging only for debugging purposes, as it can generate a large amount of data.
+{% endhint %}
+
 ***
 
 ### debug\_log
 
 #### default: `false`
 
-Enables Debug-Mode. Can get spammy, use for only for debugging.
-
-***
-
-### tree\_log
-
-#### default: `false`
-
-Logs Tree Growing Events in a separate log file.
-
-{% hint style="info" %}
-Not implemented yet.
-{% endhint %}
+Enable Debug Mode. \
+This setting can generate a substantial amount of log data, so it should be used only for debugging purposes.
 
 ***
 
@@ -346,11 +340,26 @@ Not implemented yet.
 
 #### default: `false`
 
-Logs Plant Growing Events in a separate log file.
+Logs Plant Growing Events in a separate log file.\
+Ensure that `debug_log` is enabled for this feature to work.
 
-{% hint style="info" %}
-Not implemented yet.
-{% endhint %}
+***
+
+### structure\_log
+
+#### default: `false`
+
+Enables logging of tree growth events (e.g., saplings growing into trees, mushrooms growing into huge mushrooms) in a separate log file.\
+Ensure that `debug_log` is enabled for this feature to work.
+
+***
+
+### player\_log
+
+#### default: `false`
+
+Enables logging of player interaction events in a separate log file.\
+Ensure that `debug_log` is enabled for this feature to work.
 
 ***
 
@@ -358,10 +367,11 @@ Not implemented yet.
 
 #### default: `false`
 
-Logs Bonemeal Usage Events in a separate log file.
+Logs events related to Bonemeal usage in a separate log file.\
+Ensure that `debug_log` is enabled for this feature to work.
 
 {% hint style="info" %}
-Not implemented yet.
+`bonemeal_log` not implemented yet.
 {% endhint %}
 
 ***
