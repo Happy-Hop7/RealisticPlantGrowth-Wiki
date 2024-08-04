@@ -27,7 +27,7 @@ No, custom biomes are not supported yet, but I plan to include this feature in t
 
 <summary>What Versions of Minecraft Are Supported?</summary>
 
-The plugin supports Minecraft versions **1.20 and above**.&#x20;
+RealisticPlantGrowth supports Minecraft versions **1.20.1 and above**.&#x20;
 
 Compatibility with other versions is not guaranteed.
 

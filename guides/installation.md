@@ -8,7 +8,7 @@ description: >-
 
 ## Requirements
 
-<table data-header-hidden><thead><tr><th width="259"></th><th></th></tr></thead><tbody><tr><td><strong>Minecraft Server Version:</strong></td><td><strong>1.20</strong> <em>or above</em>.</td></tr><tr><td><strong>Java Version:</strong></td><td><em>At least</em> <strong>Java 17</strong>. <em>(recommend using</em> <strong>Java 21</strong><em>)</em></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="259"></th><th></th></tr></thead><tbody><tr><td><strong>Minecraft Server Version:</strong></td><td><strong>1.20.1</strong> <em>or above</em>.</td></tr><tr><td><strong>Java Version:</strong></td><td><em>At least</em> <strong>Java 17</strong>. <em>(recommend using</em> <strong>Java 21</strong><em>)</em></td></tr></tbody></table>
 
 ***
 
