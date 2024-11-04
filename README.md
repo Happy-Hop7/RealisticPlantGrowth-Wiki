@@ -31,7 +31,7 @@ _**Realistic Plant Growth**_ is a powerful Spigot/Paper plugin that brings a new
 * Maybe you want cocoa to grow only in jungles or make plants grow slower in deserts?
 * Or perhaps you want farms to be above ground and need natural light?
 
-&#x20;                                          **You can do all that with **_**Realistic Plant Grotwh**_**!**
+&#x20;                                          **You can do all that with **_**Realistic Plant Growth**_**!**
 
 ***
 

@@ -8,7 +8,12 @@ description: Frequently Asked Questions about the Realistic Plant Growth Plugin.
 
 <summary>Are Custom Biomes Supported?</summary>
 
-No, custom biomes are not supported yet, but I plan to include this feature in the future.
+Yes, custom biomes are now fully supported! 🥳🎉\
+Starting with version `RealisticPlantGrowth-0.9-BETA`, you can integrate custom biomes on Paper servers and their forks. \
+\
+Simply reference the namespace in your `GrowthModifiers.yml` or `BiomeGroups.yml` to identify custom biomes.\
+\
+For example, with the [Terralith Datapack](https://modrinth.com/datapack/terralith), you would use the following format: `terralith:moonlight_valley`.
 
 </details>
 
@@ -27,7 +32,7 @@ No, custom biomes are not supported yet, but I plan to include this feature in t
 
 <summary>What Versions of Minecraft Are Supported?</summary>
 
-RealisticPlantGrowth supports Minecraft versions **1.20.1 and above**.&#x20;
+RealisticPlantGrowth supports Minecraft versions **1.20.1 and above**.
 
 Compatibility with other versions is not guaranteed.
 
@@ -37,8 +42,7 @@ Compatibility with other versions is not guaranteed.
 
 <summary>What Java version do I need?</summary>
 
-You need at least **Java 17** for this plugin. \
-However, for Minecraft 1.21 and above, **Java 21** is required.
+You need at least **Java 21** for this plugin.
 
 </details>
 

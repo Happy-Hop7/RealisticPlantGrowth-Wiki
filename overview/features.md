@@ -55,7 +55,7 @@ _**Realistic Plant Growth**_ messages are designed to seamlessly integrate with 
 
 ## Planned Features
 
-* [ ] Support Custom Biomes ([Terra](https://github.com/PolyhedralDev/Terra))
+* [x] Support Custom Biomes ([Terra](https://github.com/PolyhedralDev/Terra), [Terralith Datapack](https://modrinth.com/datapack/terralith))
 * [ ] Support Custom Plants (Slimefun4 - [ExoticGarden Addon](https://github.com/TheBusyBiscuit/ExoticGarden))
 * [ ] Enhance Event Logging
 * [ ] Implement Visual Effects for Area Scans (Debugging Mode for Admins)

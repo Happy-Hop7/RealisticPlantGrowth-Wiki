@@ -50,8 +50,8 @@ GroupName:
 ```
 
 {% hint style="info" %}
-Currently, only official Minecraft biomes listed [here](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Biome.html) are supported.\
-Support for custom biomes from other plugins and datapacks will be added in future updates.
+To use non-vanilla biomes, reference them by their correct namespace. \
+For example, for a biome from the Terralith Datapack, use `terralith:moonlight_valley`
 {% endhint %}
 
 ***

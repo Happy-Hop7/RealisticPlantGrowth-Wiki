@@ -167,8 +167,8 @@ Default:
 ```
 
 {% hint style="info" %}
-For now, only official Minecraft biomes listed [>here<](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/block/Biome.html) are supported. \
-In future updates, this will be expanded to include custom biomes.
+To use non-vanilla biomes, reference them by their correct namespace. \
+For example, for a biome from the Terralith Datapack, use `terralith:moonlight_valley`
 {% endhint %}
 
 ***
