@@ -1,68 +1,90 @@
 ---
-description: Explore the diverse features that make Realistic Plant Growth stand out.
+description: Discover the innovative features that bring Realistic Plant Growth to life in your Minecraft world.
 ---
 
-# ✨ Features
+# Feature Highlights
 
 {% hint style="info" %}
-N**ote:**
-
-All features can be toggled and fine-tuned either directly in the `Config.yml` file or by adjusting the `GrowthModifiers.yml` file.
+**Note:** All features are highly customizable! <br>
+You can tweak them to your preference in the `Config.yml` and `GrowthModifiers.yml` files.
 {% endhint %}
 
-## Biome-Specific Plant Growth
 
-Customize the growth rates of Minecraft plants based on specific biomes by adjusting the values in the `GrowthModifiers.yml` file. \\
+## 🌍 Biome-Specific Plant Growth & Death
 
-For additional details about configuring the `GrowthModifiers.yml` file, refer to the information provided [here](../guides/configuration/growthmodifiers.yml.md).
+Tailor plant growth rates based on the biome they’re in! <br>
+With `GrowthModifiers.yml`, you have control over growth speed and even the survival odds of plants in each biome, 
+making your worlds feel more authentic and responsive to their environments.
 
-## Biome-Specific Plant Death Chance
+Need more details? <br>
+Check out the [Growth Modifiers guide](../guides/configuration/growthmodifiers.yml.md).
 
-Whenever a plant attempts to advance to the next growth stage, a dice roll determines whether the plant either progresses in growth or faces the possibility of dying.\
-This chance of death can be customized for each plant individually.
 
-## Sounds and Effects
+## 🏞️ Custom Biome Support
 
-When a plant dies, a sound and visual effect can be triggered at the plant's location.
+Bring extra depth to your Minecraft world with support for custom biomes, such as those from [Terra](https://github.com/PolyhedralDev/Terra), [Terralith Datapack](https://modrinth.com/datapack/terralith), and more. <br>
+Realistic Plant Growth adapts to unique biome configurations, allowing you to fine-tune plant behavior for every type of biome you add to the game.
 
-## Replace Farmland On Harvest
 
-When harvesting fully or partially grown plants, the farmland undergoes a random transformation into either dirt or coarse dirt. This prompts users to re-till the farm area before planting new seeds.
+## 🌱 Natural Survival Instincts
 
-## Agricultural Crops Require Hoe
+Add an element of risk to plant growth. <br>
+Each time a plant progresses, there’s a chance it may perish instead of advancing — a dynamic way to simulate natural survival struggles across different biomes.
 
-To obtain drops from a harvested agricultural plant, users have to use a hoe.\
-Not using a hoe cancels the drop of items.
 
-## Plants Require Natural Sky Light
+## 🪓 Tool-Specific Harvesting
 
-Plants can be set to exclusively thrive in natural skylight, preventing growth in underground and indoor farms. The light level necessary for plant growth can be adjusted.
+In Realistic Plant Growth, using a hoe is essential to collecting crops. <br>
+Harvest without a hoe? You’ll miss out on those valuable drops, adding a strategic element to farming.
 
-## UV-Light Blocks
 
-UV-Light enables the growth of plants that lack access to natural skylight, enabling their cultivation in dark and indoor environments.
+## 🚜 Realistic Farming with Replaceable Farmland
 
-## Boost Growth Rates With Fertilizer
+When you harvest crops, there's a chance that tilled farmland reverts to dirt or coarse dirt, 
+making re-tilling necessary before planting again. It’s farming, with a touch of realism!
 
-Fertilizer blocks (Composter) enhance the growth rates of plants in their vicinity. By default, each time a plant advances to the next stage, the composter fill level is depleted, signifying the utilization of fertilizer to boost the growth rate. Players must refill the composter either manually or with the assistance of hoppers.
 
-## Customizable Messages
+## ☀️ Sunlight-Dependent Growth
 
-Take control of almost every player message by effortlessly adjusting them through the default language files or by making personalized modifications to suit your preferences.\
-_**Realistic Plant Growth**_ messages are designed to seamlessly integrate with the [miniMessage format](https://docs.advntr.dev/minimessage/format.html).
+Encourage outdoor farming by making natural sunlight essential for plant growth. <br>
+Plants will only thrive under open skies, with an adjustable light level requirement that brings more realism to farming above ground.
+
+
+## 💡 UV-Light Blocks for Indoor Farming
+
+Give players an option for indoor farming! <br> 
+UV-light blocks act as a substitute for sunlight, enabling growth in dark, closed-off spaces—ideal for underground farms or greenhouses.
+
+
+## 🌾 Boost Growth with Fertilizer
+
+Place a composter nearby to speed up plant growth! <br>
+As plants progress, the composter gradually depletes, requiring regular refills to sustain its effects. 
+Automatically refill with hoppers for added convenience.
+
+
+## 🎶 Immersive Sounds and Effects
+
+When a plant dies, an optional sound and visual effect can add atmosphere to your world. <br> 
+Hear and see your plants as they flourish—or fail!
+
+## 🗨️ Customizable Messages
+
+Personalize every player message in the plugin! <br>
+Easily adjust or translate them through the language files, and utilize the [MiniMessage format](https://docs.advntr.dev/minimessage/format.html) for seamless integration.
 
 ***
 
-## Planned Features
+## 🛠️ Planned Features
 
-* [x] Support Custom Biomes ([Terra](https://github.com/PolyhedralDev/Terra), [Terralith Datapack](https://modrinth.com/datapack/terralith))
-* [ ] Support Custom Plants (Slimefun4 - [ExoticGarden Addon](https://github.com/TheBusyBiscuit/ExoticGarden))
-* [ ] Enhance Event Logging
-* [ ] Implement Visual Effects for Area Scans (Debugging Mode for Admins)
-* [ ] Enhance UV-Light Detection
-* [ ] Restrict Bonemeal Usage for Plants
-* [ ] Introduce Offline Plant Growth Add-On
-* [ ] Optimize Area Scan Performance
-* [ ] Implement Developer API
+* [x] Support for Custom Biomes (e.g. [Terra](https://github.com/PolyhedralDev/Terra), [Terralith Datapack](https://modrinth.com/datapack/terralith), ...)
+* [ ] Add Custom Plant Compatibility (Slimefun4 - [ExoticGarden Addon](https://github.com/TheBusyBiscuit/ExoticGarden))
+* [ ] Enhanced Event Logging
+* [ ] Visual Debug Effects for Area Scans (Admin Tool)
+* [ ] Improved UV-Light Detection
+* [ ] Bonemeal Restrictions
+* [ ] Offline Plant Growth Add-On
+* [ ] Optimized Area Scan Performance
+* [ ] Developer-Friendly API Integration
 
 ***
