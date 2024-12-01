@@ -85,7 +85,7 @@ For now, only official Minecraft material names listed [>here<](https://hub.spig
 In future updates, this will be expanded to include an API that supports custom plant materials.
 {% endhint %}
 
-{% hint style="warning" %}
+{% hint style="success" %}
 Some material names are mapped to simplify the configuration process. \
 For example, instead of using `MELON_STEM`, you can use `MELON` to configure the growth of melons.
 {% endhint %}
@@ -166,9 +166,13 @@ Default:
 
 ```
 
-{% hint style="info" %}
+{% hint style="success" %}
 To use non-vanilla biomes, reference them by their correct namespace. \
 For example, for a biome from the Terralith Datapack, use `terralith:moonlight_valley`
+{% endhint %}
+
+{% hint style="warning" %}
+The `Default` section also serves as the fallback configuration for any `BiomeGroups` not covered by a dedicated section.
 {% endhint %}
 
 ***
@@ -185,7 +189,7 @@ In this example, the Bamboo plant's growth parameters are being configured. \
 The configuration assigns the `BiomeGroup` called `Tropical` to the Bamboo plant , and further specifies its growth characteristics within this group.
 
 \
-The `GrowthRate` is set to `100%`, meaning the Bamboo grows at a rate equivalent to vanilla Minecraft, maintaining the default growth speed. Additionally, if you configure the [`min_natural_light`](config.yml.md#min\_natural\_light) setting, Bamboo can still grow in underground farms illuminated by UV-Light Blocks (defined under [`uv_blocks`](config.yml.md#uv\_blocks)), but at a reduced growth rate of `35%` compared to the normal rate.
+The `GrowthRate` is set to `100%`, meaning the Bamboo grows at a rate equivalent to vanilla Minecraft, maintaining the default growth speed. Additionally, if you configure the [`min_natural_light`](config.yml.md#min_natural_light) setting, Bamboo can still grow in underground farms illuminated by UV-Light Blocks (defined under [`uv_blocks`](config.yml.md#uv_blocks)), but at a reduced growth rate of `35%` compared to the normal rate.
 
 The configuration also sets a `NaturalDeathChance` of `5%`, indicating a small chance of Bamboo dying naturally in tropical biomes. In contrast, the `UVLightDeathChance` is set to `15%`, reflecting a higher chance of Bamboo dying in underground farms lit by UV-Light Blocks compared to those exposed to natural skylight.
 
@@ -238,7 +242,7 @@ The `BiomeGroup` section, which typically defines specific biome groups with tai
 
 
 
-Within the `Default` section, various growth parameters for Cocoa are specified, but these settings apply only to jungle biomes. The `GrowthRate` is set to `100%`, meaning Cocoa grows at the standard rate as per vanilla Minecraft. If underground farms use UV-Light Blocks, defined under [`uv_blocks`](config.yml.md#uv\_blocks), Cocoa can still grow, but at a reduced rate of `55%`.
+Within the `Default` section, various growth parameters for Cocoa are specified, but these settings apply only to jungle biomes. The `GrowthRate` is set to `100%`, meaning Cocoa grows at the standard rate as per vanilla Minecraft. If underground farms use UV-Light Blocks, defined under [`uv_blocks`](config.yml.md#uv_blocks), Cocoa can still grow, but at a reduced rate of `55%`.
 
 The configuration also defines the chances of Cocoa plants dying under different conditions. The `NaturalDeathChance` is set at `5%`, indicating a slight chance of Cocoa dying naturally in jungle biomes. The `UVLightDeathChance` is set at `25%`, reflecting a higher chance of Cocoa dying when exposed to UV light in underground farms.
 
@@ -267,7 +271,16 @@ COCOA:
 
 ### Example 3
 
-🚧 Work in Progress 🚧
+In this configuration example, the growth parameters for melons are defined based on the biomes in which they are grown. The configuration specifies two biome groups, `DesertBiomes` and `ForestBiomes`, and also includes specific rules for the `PLAINS` and `SWAMP` biomes. \
+Together, these define where melons can grow and what growth behavior to expect.
+
+
+
+The `DesertBiomes` group has its own dedicated section, which adjusts melon growth to reflect the harsher conditions of desert environments. The `GrowthRate` is reduced to `50%`, meaning melons grow more slowly in these biomes. However, if UV-Light Blocks are used, the `UVLightGrowthRate` increases to `75%`, providing a slight improvement in growth speed under artificial light. The `NaturalDeathChance` is set at `10%`, indicating a higher risk of melons dying naturally in deserts, but this risk is mitigated when UV light is present, reducing the `UVLightDeathChance` to `5%`.
+
+In contrast, the `ForestBiomes` group does not have its own modifier section. Instead, these biomes fall under the settings defined in the `Default` section. The same applies to `PLAINS` and `SWAMP` biomes, which are explicitly listed under the Default section. Here, melons grow at the standard `GrowthRate` of `100%`, mirroring vanilla Minecraft behavior. The `UVLightGrowthRate` is also set to `100%`, allowing for typical growth under UV light. The `NaturalDeathChance` is relatively low at `5%`, with an even smaller `UVLightDeathChance` of `3%`, making these biomes more favorable for melon cultivation.
+
+The `Default` section also serves as the fallback configuration for any `BiomeGroup` not covered by a dedicated section. By including `PLAINS` and `SWAMP` directly and applying it to `ForestBiomes`, the `Default` section ensures that melons grow consistently in these environments without additional customization.
 
 {% code title="Example 3" %}
 ```yaml
@@ -332,7 +345,18 @@ DesertBiomes:
 
 ### Order of valid Biome Checking
 
+When determining which `BiomeGroup` a specific biome belongs to during a growth event, the system checks the order of appearance in the `BiomeGroups.yml` configuration file.&#x20;
 
+If a biome is assigned to multiple `BiomeGroups`, only its <mark style="color:red;">**first appearance**</mark> in the file is considered valid. Subsequent appearances of the same biome in other `BiomeGroups` are ignored during this decision-making process.
+
+This means the order in which biomes are listed within `BiomeGroups.yml` is critical.&#x20;
+
+For example, if the `DESERT` biome is listed first under the `DesertBiomes` group and later under `AridBiomes`, the system will recognize it only as part of `DesertBiomes` for that plant. The `AridBiomes` assignment would be ignored during growth calculations.
+
+To avoid conflicts or unintended behavior, you should ensure that:
+
+1. Each biome is assigned to only one `BiomeGroup`.
+2. If assigning a biome to multiple groups is unavoidable, carefully order the groups in `BiomeGroups.yml` based on priority, keeping the **first appearance rule** in mind.
 
 ### Growth Modifier Selection
 
