@@ -37,6 +37,21 @@ If you have questions about compatibility with a specific generator, feel free t
 
 <details>
 
+<summary>Is Realistic Plant Growth Compatible with Plugin XY?</summary>
+
+There is no way to test compatibility with all Spigot/Paper plugins out there, but if you already have a plugin installed that modifies farming mechanics, the chances are high that the plugins are incompatible.\
+\
+**The best way to test compatibility is to simply try it out.**&#x20;
+
+If an issue arises:
+
+* **For closed-source plugins**, contact the developer of that plugin and request a fix.
+* **For open-source plugins**, open an issue on both our GitHub repository and theirs, and link them if possible!
+
+</details>
+
+<details>
+
 <summary>Config Setting XY Does Not Work</summary>
 
 1. Check and make sure you configure the setting as described in [config.yml.md](../guides/configuration/config.yml.md "mention").
