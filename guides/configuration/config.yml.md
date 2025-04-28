@@ -64,6 +64,30 @@ Negative numbers deactivate this feature (e.g., 'bonemeal\_limit: -1').
 
 ***
 
+### shift\_composter\_fill
+
+#### default: `true`
+
+This setting enables players to rapidly fill composters by `shift-right-clicking` while holding a compostable item.  
+It speeds up the composting process, allowing players to quickly fill the composter compared to placing items one at a time.
+
+If there are not enough compostable items to completely fill the composter, the composter will be partially filled based 
+on the composting success rate, and all items will be consumed.
+
+***
+
+### allow\_bonemeal\_in\_composters
+
+#### default: `false`
+
+This setting allows players and hoppers to use `Bonemeal` in composters.  
+When this option is enabled, `Bonemeal` will always increase the composter fill level by `1` with a `100%` success chance,  
+making it an efficient way to fill composters used as fertilizers for plants.
+
+This feature only works if the `shift_composter_fill` setting is enabled.
+
+***
+
 ### min\_natural\_light
 
 #### default: `15`

@@ -55,6 +55,13 @@ UV-light blocks act as a substitute for sunlight, enabling growth in dark, close
 Place a composter nearby to speed up plant growth!\
 As plants progress, the composter gradually depletes, requiring regular refills to sustain its effects. Automatically refill with hoppers for added convenience.
 
+## 🚀 Quick Composter Fill
+
+Shift-right-click on a Composter while holding a compostable item to instantly fill the composter to its maximum compost level.\
+If there aren’t enough items to fully fill the composter, it will be partially filled, and all items in the player’s hand will be consumed.\
+Additionally, Bonemeal now guarantees a 100% chance to increase the composter fill by 1.
+
+
 ## 🎶 Immersive Sounds and Effects
 
 When a plant dies, an optional sound and visual effect can add atmosphere to your world.\
