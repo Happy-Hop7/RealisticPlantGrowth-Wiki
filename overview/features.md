@@ -55,12 +55,21 @@ UV-light blocks act as a substitute for sunlight, enabling growth in dark, close
 Place a composter nearby to speed up plant growth!\
 As plants progress, the composter gradually depletes, requiring regular refills to sustain its effects. Automatically refill with hoppers for added convenience.
 
-## 🚀 Quick Composter Fill
+## 🚫 Disable Bonemeal Output from Composters
 
-Shift-right-click on a Composter while holding a compostable item to instantly fill the composter to its maximum compost level.\
-If there aren’t enough items to fully fill the composter, it will be partially filled, and all items in the player’s hand will be consumed.\
-Additionally, Bonemeal now guarantees a 100% chance to increase the composter fill by 1.
+Prevent composters from producing bonemeal entirely.  
+When enabled, neither manual nor automated composting will yield bonemeal, effectively disabling bonemeal farming via composters.
 
+## 🧪 Use Bonemeal as Composter Input
+
+Allow bonemeal to act as a compostable item.  
+Each use of bonemeal in a composter guarantees a 100% success rate, instantly increasing the compost level by 1.  
+Supports both manual insertion and automated systems using hoppers.
+
+## ⚡ Rapid Composter Fill with Shift-Click
+
+Hold Shift and right-click a composter with compostable items to fill it quickly.  
+Speeds up manual composting without bypassing Minecraft’s vanilla success chance logic—items are consumed accordingly.
 
 ## 🎶 Immersive Sounds and Effects
 
