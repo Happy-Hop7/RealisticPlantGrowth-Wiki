@@ -64,30 +64,6 @@ Negative numbers deactivate this feature (e.g., 'bonemeal\_limit: -1').
 
 ***
 
-### shift\_composter\_fill
-
-#### default: `true`
-
-This setting enables players to rapidly fill composters by `shift-right-clicking` while holding a compostable item.  
-It speeds up the composting process, allowing players to quickly fill the composter compared to placing items one at a time.
-
-If there are not enough compostable items to completely fill the composter, the composter will be partially filled based 
-on the composting success rate, and all items will be consumed.
-
-***
-
-### allow\_bonemeal\_in\_composters
-
-#### default: `false`
-
-This setting allows players and hoppers to use `Bonemeal` in composters.  
-When this option is enabled, `Bonemeal` will always increase the composter fill level by `1` with a `100%` success chance,  
-making it an efficient way to fill composters used as fertilizers for plants.
-
-This feature only works if the `shift_composter_fill` setting is enabled.
-
-***
-
 ### min\_natural\_light
 
 #### default: `15`
@@ -160,6 +136,40 @@ This anonymized information is invaluable for enhancing and optimizing plugins b
 
 Set this option to `true` to enable automatic update checks when the server starts.\
 Setting it to `false` will disable update checking.
+
+***
+
+## Composter Settings
+Configuration options for customizing composter behavior and functionality in the game.
+
+***
+
+### disable\_bonemeal\_output
+
+#### default: `false`
+
+If enabled, composters will no longer produce bonemeal as an output.  
+This effectively disables bonemeal farming using hopper-fed composters or manual composting.  
+When `disable_bonemeal_output` is set to `true`, composters will accept input but will never yield bonemeal.
+
+***
+
+### quick\_fill\_with\_shift
+
+#### default: `false`
+
+If enabled, allows players to rapidly fill composters by holding Shift and right-clicking with compostable items.  
+Speeds up manual composting for convenience, especially during bulk operations.  
+The exact number of items consumed is determined using vanilla composting chance calculations.
+
+***
+
+### allow\_bonemeal\_as\_input
+
+#### default: `false`
+
+If enabled, allows bonemeal to be inserted into composters by players or hoppers.  
+Each bonemeal used increases the compost level by 1 with a 100% success rate.
 
 ***
 
